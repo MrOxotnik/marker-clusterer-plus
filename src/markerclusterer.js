@@ -1320,12 +1320,13 @@ MarkerClusterer.prototype.repaint = function () {
 
   // Remove the old clusters.
   // Do it in a timeout to prevent blinking effect.
-  setTimeout(function () {
-    var i;
+  // TODO: Comment for delete blinking effect
+  // setTimeout(function () {
+    // var i;
     for (i = 0; i < oldClusters.length; i++) {
       oldClusters[i].remove();
     }
-  }, 0);
+  // }, 0);
 };
 
 
